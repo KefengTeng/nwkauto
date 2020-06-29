@@ -33,4 +33,4 @@ gen('6-inlinevars')
 
 ENV.filters['bracket_expansion'] = bracket_expansion
 template2 = ENV.get_template('7-customfilter.j2')
-print template2.render(iface_pattern='GigabitEthernet0/0/[0-5]', vlan_name=100)
+print(template2.render(iface_pattern='GigabitEthernet0/0/[0-5]', vlan_name=100))
